@@ -6,7 +6,7 @@ function Comment({ comment }) {
 
   return (
     <div className='comment'>
-      <img src={author.avatar} alt='Avatar' width='28' height='28' />
+      <img src={author.avatar} alt='Avatar' />
 
       <p><strong>{author.name}</strong> {content}</p>
     </div>

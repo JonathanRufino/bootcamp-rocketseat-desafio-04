@@ -8,18 +8,20 @@ function Post({ post }) {
 
   return (
     <section className='card'>
-      <img src={author.avatar} alt='Avatar' />
-
-      <div className='info'>
-        <h3>{author.name}</h3>
-        <time>{date}</time>
-      </div>
-
       <div>
-        <p>{content}</p>
+        <img src={author.avatar} alt='Avatar' />
 
-        {comments.map(comment => <Comment comment={comment} />)}
+        <div className='info'>
+          <h3>{author.name}</h3>
+          <time>{date}</time>
+        </div>
       </div>
+
+      <p>{content}</p>
+
+      <hr />
+
+      {comments.map(comment => <Comment comment={comment} />)}
     </section>
   );
 }

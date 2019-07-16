@@ -45,7 +45,8 @@ nav img {
 
 .comment {
   display: flex;
-  margin-top: 10px;
+  margin-top: 20px;
+  align-items: flex-start;
 }
 
 .comment:last-of-type {
@@ -55,16 +56,16 @@ nav img {
 .comment p {
   background: #EEEEEE;
   padding: 10px 15px;
+  margin: 0 0 0 10px;
   border-radius: 20px;
   font-size: 13px;
   color: #3E3E3E;
-  margin-left: 10px;
 }
 
 .card {
   background: #fff;
   border-radius: 4px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 20px 20px 10px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 5px 0 rgba(0, 0, 0, 0.1);
 }
@@ -74,12 +75,33 @@ nav img {
   color: #3E3E3E;
 }
 
-.info h3 {
+time {
+  font-size: 11px;
+  color: #9A9A9A;
+}
+
+section div {
+  display: flex;
+  flex-direction: row;
+}
+
+section div .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+section div .info h3 {
   color: #4A4A4A;
   font-size: 14px;
 }
 
-time {
-  font-size: 11px;
-  color: #9A9A9A;
+section p {
+  margin-top: 15px;
+}
+
+section hr {
+  margin-top: 20px;
+  border-top: #EEEEEE;
 }
